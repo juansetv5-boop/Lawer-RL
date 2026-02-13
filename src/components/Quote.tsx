@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface QuoteProps {
     data: { quote: string; author: string };
 }
@@ -9,9 +11,10 @@ export default function Quote({ data }: QuoteProps) {
         <section className="py-[clamp(4rem,10vh,12rem)] bg-deep-charcoal border-y border-legal-gold/10 overflow-hidden relative">
             <div className="absolute inset-0 opacity-[0.05]">
                 {/* Placeholder image from design */}
-                <img
+                <Image
                     alt="Atmospheric classical pediment architecture"
-                    className="w-full h-full object-cover grayscale"
+                    fill
+                    className="object-cover grayscale"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCsYHXoUrFbeznuOMaQ2PiHNh4ckoJQsQ3b24CWW2x0OznVLRi2G0ZH--2_pKEMWZtjm_eBUmR2G-3Fhrdf2S-D_ifu3YbqwLLwoLs2ftcLFX8TdfeSbOd2fOiEgWtYzJpzpJv_j7J2IdI3FmajIM7z8F8wNRCJ5ND_QiIDg6uzhOr3QOazA00mggYqQ_C0uxFyGfaf5giBjV2Od1RwC1xI9MhJI64_1EKPd9ZvzYer6iGvwgxRaWqyVuAFq9-520ez8UGpGzesOM"
                 />
             </div>

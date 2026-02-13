@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface StrategyProps {
     items: string[];
 }
@@ -8,10 +10,10 @@ export default function Strategy({ items }: StrategyProps) {
     return (
         <section className="py-[clamp(4rem,10vh,12rem)] bg-matte-black relative overflow-hidden" id="estrategia">
             <div className="absolute right-0 top-0 h-full w-1/2 opacity-[0.08] pointer-events-none grayscale contrast-125">
-                {/* Replaced Image with a placeholder or Next/Image if I had the URL. Using the URL from HTML for now */}
-                <img
+                <Image
                     alt="Dramatic close-up of marble Themis statue focusing on blindfold and sword"
-                    className="h-full w-full object-cover object-center"
+                    fill
+                    className="object-cover object-center"
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuC09EHaLe2FWtxMtvPSTsZ2x6XqlhbcWbXdPCwdqz9RAE2nSplx0sFX5eQPCMngB99Ql9fwM4MCHS2MmAgRd2bhReqgkRZHZUauvystMCV9ISjKmN8VqeXk46VMaI6ACBtlXd72KYytZ5J28Q7RG86NjH1OdfNYTYDi_A80Ot_uMkrAJWagxIGvXUVZ0VX3PGrHaS5LBjHiclHSjv2txREUiP49IQzOnIzeAC_CHboEidunzACRqPh-ebalhymhu9SPKM1HEDq5WDA"
                 />
                 <div className="absolute inset-0 bg-gradient-to-l from-legal-gold/5 via-transparent to-transparent"></div>
