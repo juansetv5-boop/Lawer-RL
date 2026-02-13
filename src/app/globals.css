@@ -2,6 +2,8 @@
 
 @theme {
   --color-matte-black: #050505;
+  --color-black: #000000;
+  --color-white: #ffffff;
   --color-legal-gold: #C5A059;
   --color-legal-gold-bright: #E8D099;
   --color-legal-gold-deep: #8E6D2E;
@@ -28,6 +30,7 @@
   .gold-text-gradient {
     background: linear-gradient(to right, #C5A059, #F2E2BA, #8E6D2E);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
     /* Fallback */
@@ -68,12 +71,23 @@ html {
 }
 
 body {
-  @apply bg-matte-black text-soft-grey font-sans selection:bg-legal-gold selection:text-black;
+  background-color: var(--color-matte-black);
+  color: var(--color-soft-grey);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::selection {
+  background-color: var(--color-legal-gold);
+  color: #000000;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  @apply font-serif text-white tracking-authority;
+  font-family: var(--font-serif);
+  color: #ffffff;
+  letter-spacing: var(--tracking-authority);
 }
