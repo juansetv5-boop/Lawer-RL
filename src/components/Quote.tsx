@@ -19,7 +19,7 @@ export default function Quote({ data }: QuoteProps) {
                 <span className="material-symbols-outlined text-legal-gold/10 text-[25vw] absolute left-1/2 -top-[10vw] -translate-x-1/2 pointer-events-none select-none">gavel</span>
                 <div className="relative z-10">
                     <blockquote className="text-[5vw] md:text-[2.5vw] font-serif text-white italic leading-[1.4] mb-[8vw] font-light">
-                        "{data.quote}"
+                        &quot;{data.quote}&quot;
                     </blockquote>
                     <div className="flex flex-col items-center">
                         <div className="h-px w-20 gold-foil-gradient mb-6"></div>
