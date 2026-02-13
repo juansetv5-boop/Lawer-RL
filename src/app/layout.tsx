@@ -29,10 +29,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="scroll-smooth">
-      <head>
-        {/* We keep the material symbols link as it is a common way, but fix the img tag below */}
-        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
-      </head>
       <body
         className={`${playfair.variable} ${inter.variable} antialiased font-sans bg-matte-black text-soft-grey`}
       >
